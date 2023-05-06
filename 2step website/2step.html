@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2Step Solutions</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <header>
+            <a href="#home"><img src="" alt=""></a> 
+
+            <ul id ="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+            
+        </header>
+    </section>
+    
+    <section id="home">
+
+        <!--<header>
+            <a href="#"><img src="" alt=""></a> 
+
+            <ul id ="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </header>-->
+        <div class="welcome">
+            <h2> Welcome to <br> 2Step Solutions</h2>
+            <p class="par">Creating cutting edge solutions that work now</p>
+            <button class="aboutus"><a href="#about">Learn more about us</a></button>
+        </div>
+         <div class="imageholder">
+            <img src="image/background_laptop5.png" alt="welcome" >
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <h1> About Us</h1>
+        <div class="abt">
+           
+            <p class="par2"> 
+                2Step Solution is a 100% black owned company  founded in 2019. <br><br>
+                2Step Solution has always been driven to make a difference in people’s lives and adding value in business through his extensive experience in the IT and Supply Chain industries.<br><br>
+                Our mission is to help improve business processes, prevent stumbling blocks  and create ease of business through technology.<br><br>
+                2Step Solutions’ vision is  to become a first choice company that will provide proactive business solutions to our clients. We strive to provide the best service by developing and enhancing our offerings in accordance to our clients’ needs.
+            </p>
+        </div>
+        <div class="imageholder2">
+            <img src="image/laptop.jpeg" alt="welcome" >
+        </div>
+    </section>
+    </section>
+
+   
+    <section id="services">
+
+        <div class="serv">
+            <h1> Our services</h1>
+            <p class="par3">
+                <i class="fa fa-file-code" aria-hidden="true"></i> <br><br>  <span class="bolded">Web Design and Development </span>– we build websites that are tailored to meed our clients’ needs<br><br>
+                <i class="fa fa-cogs" aria-hidden="true"></i> <br> <span class="bolded">Web Maintenance </span> - we keep our client’s website up-to-date with the latest trends <br><br>
+                <i class="fa fa-users" aria-hidden="true"></i>   <br> <span class="bolded">Business Development </span> - bringing new ideas, strategies and innovation backed by the latest technology<br><br>
+                <i class="fa fa-photo" aria-hidden="true"></i>   <br> <span class="bolded">Graphic Designing</span> - helping my clients to have brand identity<br><br>
+                <i class="fa fa-camera" aria-hidden="true"></i>   <br> <span class="bolded">Photography</span>  – We capture best memories through our lens for private functions, corporate events, and product images.
+
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+
+
+        <div class="contact-info">
+            <h4>Contact Info</h4>
+            <i class="fas fa-envelope"></i> <a href="mailto:vusi@2stepsolution.co.za">vusi@2stepsolution.co.za</a>
+            <br><br>
+            <i class="fas fa-location"> Midrand, Gauteng</i>
+        </div>
+
+        <div class="icon">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            
+        </div>
+        
+        <div class="form-wrap">
+            <form onsubmit="sendEmail(); reset(); return false"; >
+                <h4> Contact us</h4>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="text" id="email" placeholder="email address">
+                <input type="text" id="number" placeholder="Contact Number">
+                <textarea id="message" placeholder="Text your message"></textarea>
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "vusi@2stepsolutions.co.za",
+                Password : "57FB767C9F7CCBE392A79214EC4F6A560320",
+                To : 'vusi@2stepsolutions.co.za',
+                From : document.getElementById("email").value,
+                Subject : "Potential Client",
+                Body : document.getElementById("message").value
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
