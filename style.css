@@ -99,6 +99,12 @@ header{
 }
 #menu li a:hover{
     color: rgb(247, 123, 7);
+    
+}
+
+#menu li a.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 123, 7);
 }
 
 label #btn,
@@ -156,11 +162,13 @@ label #cancel{
 
 h1{
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
-    font-size: 40px;
+    font-size: 45px;
+    /*text-decoration: underline;
+    text-decoration-color: rgb(247, 123, 7);*/
 }
 /*h2{
     position: absolute;
@@ -196,7 +204,7 @@ h1{
     margin-left: 0%;
     margin-top: 0%;
     width: 100%;
-    height: 21.3cm;
+    height: 100%;
     /*filter: blur(8px); /* Add the blur effect 
     background-image: url("background_laptop2.png");
     
@@ -215,8 +223,8 @@ h1{
 .aboutus{
     width: 280px;
     height: 70px;
-    background: #a23b3b;
-    border: none;
+    background: #a49f9f75;
+    border-color: rgb(247, 123, 7);
     position: absolute;
     top: 65%;
     left: 31%;
@@ -229,12 +237,18 @@ h1{
 
 .aboutus a{
     text-decoration: none;
-    color: rgb(248, 172, 31);
+    color: rgb(247, 123, 7);
     transition: .3s ease;
 }
 
 .aboutus:hover{
-    background: #fff;
+    background: #dfdcdcf1;
+
+}
+
+.aboutus a:hover{
+    text-decoration: none;
+    color: rgb(11, 11, 11);
 }
 
 .imageholder2 img{
@@ -247,18 +261,20 @@ h1{
 }
    
 .form-wrap{
-    width: 300px;
-    padding: 20px;
+    width: 500px;
+    padding: 23px;
     display: block;
     background: #000;
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 48%;
+    left: 75%;
     transform: translate(-50%, -50%);
     border-radius: 6px;
+    border-color: rgb(247, 123, 7);
+    
 }
 .form-wrap input{
-    width: 240px;
+    width: 450px;
     height: 35px;
     background: none;
     border-bottom: 1px solid #fff;
@@ -289,7 +305,7 @@ h4, input, textarea{
 }
 
 .form-wrap textarea{
-    width: 240px;
+    width: 450px;
     height: 80px;
     background: none;
     color: #fff;
@@ -332,26 +348,52 @@ h4, input, textarea{
 }
 .contact-info h4{
     color: rgb(247, 123, 7);
-    text-align: left;
+    text-align: center;
     font-family: sans-serif;
     font-size: 30px;
     font-weight: bold;
+
     
+}
+
+.contact-info a{
+    color: rgb(12, 71, 134);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 26px;
+    display: block;
+}
+
+.contact-info h5{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 26px;
 }
 .contact-info{
 
-        width: 30%;
-        padding: 25px;
+        width: 35%;
+        padding: 40px;
+        
         /*display: block;*/
-        background: rgb(157, 164, 166);
+        background: rgb(105, 113, 116);
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 47.5%;
+        left: 26%;
         transform: translate(-50%, -50%);
         border-radius: 6px;
-        font-size: 20px;
+        font-size: 25px;
         font-family: sans-serif;
         font-weight: bold;
+        height: 530px;
+        border-color: rgb(247, 123, 7);
+        border-radius: 10px;
+}
+
+.contact-info i {
+    text-align: center;
+    font-size: 80px;
+    display: block;
+    
 }
 
 .abt{
@@ -380,7 +422,8 @@ h4, input, textarea{
     position: absolute;
     top: 97%;
     left: 40%;
-    font-weight: bold;
+    font-size: 13px;
+    /*font-weight: bold;*/
 }
 
 
@@ -401,6 +444,10 @@ h4, input, textarea{
         transition: .2s;
         width: 1.8cm;
         height: 1.8cm
+    }
+
+    .imageholder img{
+        height: 120vh;
     }
 
     .welcome h2 {
@@ -432,115 +479,19 @@ h4, input, textarea{
         padding-top: 0px;
     }
 
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 999px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
 
-    
-  
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
 
     .par2{
         font-size: 16px;
         
     }
 
-    .imageholder2 img {
-        padding-top: 90px;
-        width: 8cm;
-        height: 8cm
-    }
-
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 990px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
-
-    
-  
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
 
     .par2{
         font-size: 16px;
@@ -557,81 +508,17 @@ h4, input, textarea{
         font-size: 20px
     }
 
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 955px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
-
-    
   
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
 
     #menu li a {
         font-size: 21px;
     }
 
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
-
     .aboutus{
         left: 40%;
-    }
-
-    .par2{
-        font-size: 16px;
-        
-    }
-
-    .imageholder2 img {
-        padding-top: 130px;
-        width: 7cm;
-        height: 7cm
-    }
-
-    .par3{
-        font-size: 20px
     }
 
     .fas{
@@ -641,157 +528,19 @@ h4, input, textarea{
     .contact-info{
         font-size: 15px
     }
-
-
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 880px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
-
-    
-  
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
 
     #menu li a {
         font-size: 19px;
     }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
-    .aboutus{
-        left: 40%;
-    }
-
-    .par2{
-        font-size: 16px;
-        
-    }
-
-    .imageholder2 img {
-        padding-top: 130px;
-        width: 7cm;
-        height: 7cm
-    }
-
-    .par3{
-        font-size: 20px
-    }
-
-    .fas{
-        font-size: 15px
-    }
-
-    .contact-info{
-        font-size: 15px
-    }
-
-
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 855px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
-
-    
-  
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
 
     #menu li a {
         font-size: 17px;
-    }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
-    .aboutus{
-        left: 40%;
-    }
-
-    .par2{
-        font-size: 16px;
-        
     }
 
     .imageholder2 img {
@@ -817,41 +566,9 @@ h4, input, textarea{
         left: 77%;
     }
 
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 815px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
 
     label #btn{
         display: block;
@@ -891,29 +608,7 @@ h4, input, textarea{
         display: block;
     }
 
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
-    .aboutus{
-        left: 40%;
-    }
-
-    .par2{
-        font-size: 16px;
-        
-    }
+    
 
     .imageholder2 img {
         padding-top: 130px;
@@ -923,10 +618,6 @@ h4, input, textarea{
 
     .par3{
         font-size: 19px
-    }
-
-    .fas{
-        font-size: 15px
     }
 
     .contact-info h4{
@@ -945,81 +636,11 @@ h4, input, textarea{
         text-align: center;
     
     }
-
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 725px){
-    header{
-        padding: 15px;
-        transition: .2s;
-        padding-top: 4px;
-    }
-
-    
-  
-    .navbar img{
-        padding: 0px  1%;
-        transition: .2s;
-        width: 1.8cm;
-        height: 1.8cm
-    }
-
-    .welcome h2 {
-        font-size: 60px;
-        margin: 0 0 30px;
-    }
-
-    .par{
-        left: 40%;
-    }
     .aboutus{
         left: 45%;
-    }
-
-    .par2{
-        font-size: 16px;
-        
-    }
-
-    .imageholder2 img {
-        padding-top: 130px;
-        width: 5cm;
-        height: 5cm
-    }
-
-    .par3{
-        font-size: 19px
-    }
-
-    .fas{
-        font-size: 15px
     }
 
     .contact-info h4{
@@ -1036,38 +657,6 @@ h4, input, textarea{
         font-size: 23px
     }
     
-    .form-wrap{
-        top: 50%;
-        left: 77%;
-    }
-
-    #menu{
-        padding: 0px;
-        transition: .2s;
-    }
-    
-    #menu {
-        padding-top: 0px;
-    }
-
-    /*#menu li{
-
-        
-        margin-top: -50px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    .navbar img2{
-        
-       display: block;
-    
-    }*/
 }
 
 @media only screen and (max-width: 652px){
@@ -1091,10 +680,9 @@ h4, input, textarea{
     }
 
     .imageholder2 img {
-        text-align: center;
-        position: relative;
-        left: 170px;
-        top: -1cm;
+        top: -0.5cm;
+        width: 4.5cm;
+        height: 4.5cm
     }
 
     .par3{
