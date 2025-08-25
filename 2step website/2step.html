@@ -129,19 +129,17 @@
         }
     </script>
     <script>
-            var menu = document.getElementById("menu");
-            menu.style.maxHeight = "0px";
-            function togglemenu(){
-                if (menu.style.maxHeight == "0px")
-                {
-                    menu.style.maxHeight = "130px";
-                }
-                else
-                {
-                    menu.style.maxHeight = "0px";
-                }
-            }
+    // Toggle menu for mobile
+    const menu = document.getElementById("menu");
+    function togglemenu() {
+    if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+    menu.style.maxHeight = "200px";
+    } else {
+    menu.style.maxHeight = "0px";
+    }
+    }
     </script>
+
 
 
 </body>
