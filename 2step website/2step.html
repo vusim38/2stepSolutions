@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name ="viewport" content="width=mobile-width, initial-scale=1.0">
     <title>2Step Solutions</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -35,6 +36,17 @@
     
     <section id="home">
 
+        <!--<header>
+            <a href="#"><img src="" alt=""></a> 
+
+            <ul id ="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </header>-->
         <div class="welcome">
             <h2> Welcome to <br> 2Step Solutions</h2>
             <p class="par">Creating cutting edge solutions that works today</p>
@@ -69,7 +81,7 @@
         <div class="serv">
             <h1> Our services</h1>
             <p class="par3">
-                <i class="fa fa-file-code" aria-hidden="true"></i> <br><br>  <span class="bolded">Web Design and Development </span>– we build websites that are tailored to meed our clients’ needs<br><br>
+                <i class="fa fa-file-code" aria-hidden="true"></i> <br>  <span class="bolded">Web Design and Development </span>– we build websites that are tailored to meed our clients’ needs<br><br>
                 <i class="fa fa-cogs" aria-hidden="true"></i> <br> <span class="bolded">Web Maintenance </span> - we keep our client’s website up-to-date with the latest trends <br><br>
                 <i class="fa fa-users" aria-hidden="true"></i>   <br> <span class="bolded">Business Development </span> - bringing new ideas, strategies and innovation backed by the latest technology<br><br>
                 <i class="fa fa-tags" aria-hidden="true"></i>   <br> <span class="bolded">Graphic Designing</span> - helping my clients to have brand identity<br><br>
@@ -84,9 +96,14 @@
 
         <div class="contact-info">
             <h4>Contact Info</h4>
-            <i class="fas fa-envelope"></i> <a href="mailto:info@2stepsolutions.co.za">info@2stepsolutions.co.za</a>
-            <br><br>
-            <i class="fas fa-location"> Midrand, Gauteng</i>
+            
+            <div class="mail"><i class="fas fa-envelope"></i> </div>
+            
+            <a href="mailto:info@2stepsolutions.co.za">info@2stepsolutions.co.za</a>
+            
+            <div class="loxion"><i class="fas fa-location"> </i> </div>
+            
+            <h5>Midrand, Gauteng</h5>
         </div>
 
        <!-- <div class="icon">
@@ -109,7 +126,7 @@
 
         <footer class="text-center small tm-footer">
             <p class="mb-0">
-                CopyRight &copy; 2024. 2step Solutions
+                Copyright &copy; 2024. 2Step Solutions. All rights reserved.
             </p>
         </footer>
     </section>
@@ -128,7 +145,10 @@
             );
         }
     </script>
-    <script>
+
+   <script>
+
+    <script> main
     // Toggle menu for mobile
     const menu = document.getElementById("menu");
     function togglemenu() {
